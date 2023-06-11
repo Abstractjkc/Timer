@@ -1,0 +1,429 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Jun 11 16:20:29 2023
+# Process ID: 4116
+# Current directory: D:/ProgramStudy/Vivado/timer/timer.runs/synth_1
+# Command line: vivado.exe -log timer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source timer.tcl
+# Log file: D:/ProgramStudy/Vivado/timer/timer.runs/synth_1/timer.vds
+# Journal file: D:/ProgramStudy/Vivado/timer/timer.runs/synth_1\vivado.jou
+# Running On: LAPTOP-TP8RS13T, OS: Windows, CPU Frequency: 2894 MHz, CPU Physical cores: 16, Host memory: 17042 MB
+#-----------------------------------------------------------
+source timer.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/ProgramStudy/Vivado/timer/timer.srcs/utils_1/imports/synth_1/timer.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/ProgramStudy/Vivado/timer/timer.srcs/utils_1/imports/synth_1/timer.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top timer -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10620
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/ProgramSoft/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1205.070 ; gain = 408.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'timer' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/new/timer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_rebounce' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/key_rebounce.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'key_rebounce' (0#1) [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/key_rebounce.v:3]
+INFO: [Synth 8-6157] synthesizing module 'time_adder' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'time_adder' (0#1) [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'binary_bcd' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/binary_bcd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'binary_bcd' (0#1) [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/binary_bcd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'light_show' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/light_show.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'light_show' (0#1) [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/light_show.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/new/timer.v:23]
+WARNING: [Synth 8-7137] Register R_temp_reg in module light_show has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/light_show.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1298.062 ; gain = 501.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1300.586 ; gain = 504.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1300.586 ; gain = 504.281
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1300.586 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/ProgramStudy/Vivado/timer/timer.srcs/constrs_1/new/timer_constriant.xdc]
+Finished Parsing XDC File [D:/ProgramStudy/Vivado/timer/timer.srcs/constrs_1/new/timer_constriant.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/ProgramStudy/Vivado/timer/timer.srcs/constrs_1/new/timer_constriant.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/timer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/timer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1418.891 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/ProgramSoft/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'time_adder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                       A |                               00 |                               00
+                       B |                               01 |                               01
+                       D |                               10 |                               10
+                       C |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'time_adder'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 32    
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               33 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   5 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 29    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 14    
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[9]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[8]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[7]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[6]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[5]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[4]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[3]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[2]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[1]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/minute_reg[0]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[9]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[8]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[7]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[6]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[5]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[4]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[3]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[2]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[1]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/second_reg[0]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:43]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[9]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[8]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[7]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[6]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[5]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[4]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[3]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[2]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[1]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/mills_reg[0]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:44]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[31]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[30]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[29]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[28]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[27]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[26]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[25]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[24]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[23]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[22]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[21]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[20]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[19]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[18]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[17]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[16]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[15]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[14]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[13]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'U_time_adder/count_reg[12]__0/Q' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:47]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v:45]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    18|
+|3     |LUT1   |     1|
+|4     |LUT2   |    37|
+|5     |LUT3   |    45|
+|6     |LUT4   |     4|
+|7     |LUT5   |     8|
+|8     |LUT6   |    11|
+|9     |FDCE   |    83|
+|10    |FDPE   |     1|
+|11    |IBUF   |     4|
+|12    |OBUF   |    13|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.891 ; gain = 622.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 189 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1418.891 ; gain = 504.281
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.891 ; gain = 622.586
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1418.891 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 70361ace
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 2 Warnings, 163 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1418.891 ; gain = 999.234
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/ProgramStudy/Vivado/timer/timer.runs/synth_1/timer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file timer_utilization_synth.rpt -pb timer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 11 16:21:11 2023...

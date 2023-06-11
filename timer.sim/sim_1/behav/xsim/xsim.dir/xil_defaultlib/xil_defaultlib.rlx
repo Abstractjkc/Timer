@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/ProgramStudy/Vivado/timer/timer.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/ProgramStudy/Vivado/timer/timer.srcs/sim_1/new/timer_tb.v,1686454769,verilog,,,,timer_tb,,,,,,,,
+D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/binary_bcd.v,1686106825,verilog,,D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/key_rebounce.v,,binary_bcd,,,,,,,,
+D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/key_rebounce.v,1686469382,verilog,,D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/light_show.v,,key_rebounce,,,,,,,,
+D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/light_show_test/light_show.srcs/sources_1/new/light_show.v,1686469386,verilog,,D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v,,light_show,,,,,,,,
+D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/imports/Vivado/timer_adder_test/timer_adder_test.srcs/sources_1/new/time_adder.v,1686322566,verilog,,D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/new/timer.v,,time_adder,,,,,,,,
+D:/ProgramStudy/Vivado/timer/timer.srcs/sources_1/new/timer.v,1686454851,verilog,,D:/ProgramStudy/Vivado/timer/timer.srcs/sim_1/new/timer_tb.v,,timer,,,,,,,,
